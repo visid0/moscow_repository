@@ -1,0 +1,124 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 192px;
+    background-color: #A3B18A;
+}
+
+nav{
+    position: absolute;
+    right: 0px;
+    top: 140px;
+    text-align: right;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+section.heading-catalogo{
+    height: auto;
+    width: auto;
+    text-align: left;
+    padding: 9px;
+    color: black;
+    font-family: 'Interstate Black Levis',sans-serif;
+    border:solid black;
+
+}
+
+section.catalogo-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #344e41;
+}
+
+
+
+img.imagen-de-productos{
+    border-radius: 30%;
+    border-style: outset ;
+    width: 360px;
+}
+img.imagen-de-productos:hover{
+    border: solid black;
+}
+
+footer{
+    background: #DAD7CD;
+    padding: 80px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-justify: auto;
+}
+
+footer a{
+    color: black;
+}
+
+footer .empresa{
+    color: rgb(39, 36, 36);
+    border: solid black;
+    padding-left: 10px;
+    width: 550px;
+}
+footer .quick-links{
+    color: rgb(39, 36, 36);
+    box-sizing: border-box;
+    border: solid black;    
+    padding-left: 10px;
+    width: 550px;
+}
+
+
+
+@media screen and (max-width: 780px){
+
+    section.catalogo-productos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
