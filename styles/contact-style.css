@@ -61,3 +61,11 @@ body{
     margin: 16px 0;
     font-size: 16px;
 }
+
+@media screen and (max-width: 780px){
+    .form-register{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 350px;
+    }
+}
